@@ -3,13 +3,14 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UnrealBlankProjectEditorTarget : TargetRules
+public class UnrealBlankProjectTarget : TargetRules
 {
-	public UnrealBlankProjectEditorTarget( TargetInfo Target) : base(Target)
+	public UnrealBlankProjectTarget( TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Editor;
+		Type = TargetType.Server;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "UnrealBlankProject" } );
-		
+
+		bUseLoggingInShipping = true;
 	}
 }
