@@ -3,9 +3,9 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UnrealBlankProjectTarget : TargetRules
+public class UnrealBlankProjectServerTarget : TargetRules
 {
-	public UnrealBlankProjectTarget( TargetInfo Target) : base(Target)
+	public UnrealBlankProjectServerTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Server;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
