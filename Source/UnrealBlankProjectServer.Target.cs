@@ -9,6 +9,7 @@ public class UnrealBlankProjectServerTarget : TargetRules
 	{
 		Type = TargetType.Server;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		EngineIncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 		ExtraModuleNames.AddRange( new string[] { "UnrealBlankProject" } );
 
 		bUseLoggingInShipping = true;
