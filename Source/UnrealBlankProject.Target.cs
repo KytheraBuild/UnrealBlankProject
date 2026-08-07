@@ -13,5 +13,10 @@ public class UnrealBlankProjectTarget : TargetRules
 		ExtraModuleNames.AddRange( new string[] { "UnrealBlankProject" } );
 	
 		bUseLoggingInShipping = true;
+
+		// Installed (binary) engines share the engine's build environment and
+		// reject modified properties like bUseLoggingInShipping; force the
+		// override instead. No effect on source-built engines.
+		bOverrideBuildEnvironment = true;
 	}
 }
